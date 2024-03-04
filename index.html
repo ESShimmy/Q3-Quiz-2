@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"
+>
+	   <link rel="stylesheet" href="style.css">
+
+	<title>Quiz 2</title>
+</head>
+<style>
+	body {
+        	background-color: #2B2B2B;
+			    color: #A1040B;
+        }
+
+        .title {
+            text-align: center;
+            color: #A1040B;
+         }
+
+        .h1 {
+            font-size: 2.5em; /* Adjust the font size as needed */
+         }
+
+        .movie{
+            height: 200px;
+            width: 150px;
+					 }
+
+					.container{
+						text-align: center;
+						background-color: #000000;
+						color: #A1040B;
+					}
+
+					.synopsis{
+						height: 230px;
+						width: 300px;
+						font-size: 15px;
+					}
+
+					.cast{
+						font-size: 15px;
+
+					}
+
+					.review{
+						font-size: 15px;
+
+					}
+
+					.rating{
+						font-size: 15px;
+
+					}
+			        table-table-bordered {
+			           width: 80%;
+			           margin: auto;
+			           background-color: yellow
+			        }	
+
+					.container {
+						background-color: gainsboro;
+						padding: 20px;
+						border-radius: 10px;
+					}
+
+					h2 {
+						color: darkorange;
+					}
+
+					.form-group {
+					 	display: flex;
+					  	flex-direction: column;
+					  	padding: 10px;
+					  	margin-bottom: 10px;
+					  	border: 1px solid black;
+					  	border-radius: 4px;
+					}
+
+					.navbar {
+						padding-left: 10px;
+						padding-right: 10px;
+					}
+
+					img {
+						width: 90px;
+
+					}
+					.dropdown {
+			  			position: relative;
+			  			display: inline-block;
+					}
+
+					.dropdown-content {
+					  display: none;
+					  position: absolute;	
+					  background-color: #f9f9f9;
+					  min-width: 160px;
+					  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+					  padding: 12px 16px;
+					  z-index: 1;
+					}
+
+					.dropdown:hover .dropdown-content {
+					  display: block;
+					}
+
+					.nav-item{
+						color: #A1040B;
+					}
+					.movie-image {
+						background-color: #2B2B2B;
+					}
+
+
+	</style>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark"> 
+	  <div class="container-fluid">
+	    <!-- <a class="navbar-brand" href="#">Logo</a> -->
+	    <img src="https://artlogic-res.cloudinary.com/w_1600,h_1600,c_limit,f_auto,fl_lossy,q_auto/ws-timnardelli/usr/images/artworks/main_image/items/f1/f1c23681cf76470b9527b70acb93b29f/dark-web-logo_redesign_mario-animation-file.png">
+	   <!--  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+	      <span class="navbar-toggler-icon"></span>
+	    </button> -->
+	    <div class="collapse navbar-collapse" id="mynavbar">
+	      <ul class="navbar-nav me-auto">
+	        <li class="nav-item">
+	        <div class="dropdown">
+			  <span><a class="nav-link" href="#">Home</a></span>
+			  <div class="dropdown-content">
+			  <p>blah blah blah</p>
+	        </div>
+	        </li>
+	      
+	      <li class="nav-item">
+	        <div class="dropdown">
+			  <span><a class="nav-link" href="#">Movie</a></span>
+			  <div class="dropdown-content">
+			  <p>Harry Potter and the Prisoner of Azkaban</p>
+			  <p>Harry Potter and the Goblet of Fire</p>
+			  <p>Harry Potter and the Deathly Hollows</p>
+	        </div>
+	        </li>
+
+	      <li class="nav-item">
+	        <div class="dropdown">
+			  <span><a class="nav-link" href="#">Genre</a></span>
+			  <div class="dropdown-content">
+			  <p>Adventure</p>
+			  <p>Horror</p>
+			  <p>Action</p>
+	        </div>
+	        </li>
+
+	        <div class="collapse navbar-collapse" id="mynavbar">
+	      <ul class="navbar-nav me-auto">
+	        <li class="nav-item">
+	        <div class="dropdown">
+			  <span><a class="nav-link" href="#">Register</a></span>
+			  <div class="dropdown-content">
+			  <a href="file:///C:/Users/user/Desktop/Grade%209/3rd%20Quarter/ICT/Submission/SW/SW2/index.html">Register Confirm	</a>
+
+	        </div>
+	        </li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+	<div class="title">
+		<p class= "h1"><strong>M O V I E_R A T I N G</strong></p>
+	</div>
+
+
+		<!-- BOOTSTRAP TABLE |  FEB 5  -->
+<table class="table table-bordered">
+	     <thead>
+      <tr>
+        <th>MOVIE POSTERS</th>
+		    <th>SYNOPSIS</th>
+		    <th>CAST AND DIRECTORS</th>
+		    <th>MOVIE AND REVIEW</th>
+		    <th>RATING</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr>
+        <td><div class="movie">
+        	<img src= "https://static.wikia.nocookie.net/harrypotter/images/9/9e/Harry_Potter_and_the_Prisoner_of_Azkaban_poster.jpeg/revision/latest?cb=20220922141058" width= 150 height="200">
+        </div></td>
+		    <div class="movie-image">
+		    	<td><div class="synopsis">The escape of Azkaban prisoner Sirius Black throws the wizarding world into confusion and fear, and soon Sirius heads to Hogwarts to seek the revenge he has been preparing for 12 years. Meanwhile, Harry Potter learns the identity of Sirius Black in the past and waits for Sirius to come find him.</div></td>
+		    	<td><div class="cast"><strong>Cast</strong>: <i>Daniel Radcliffe, Emma Watson, Rupert Grint <br><strong>Director</strong>: Alfonso Cuaron <br><strong>Duration</strong>: <i>2hrs and 19 mins</div></td>
+		    	<td><div class="review"><strong>ccthemovieman</strong>: <i>"I thought this was excellent....better than the first two Harry Potter movies combined and better than what has followed.. That's my feeling, and I'm still sticking to it."</div></td>
+		    	<td><div class="rating"><strong><i>4.5/5</strong>:The movie was overall great and the entry of Sirius Black was well shown.</div></td>
+		    </div>
+      </tr>
+
+      <tr>
+        <td><div class="movie"><img src= "https://images.saymedia-content.com/.image/t_share/MTc2NzAzNjY0NDgyOTUzMTk1/vault-movie-review-harry-potter-and-the-goblet-of-fire.jpg"width= 150 height="200"></div></td>
+        <div class="movie-image">
+		     <td><div class="synopsis">The Triwizard Tournament is held, where outstanding wizards from three renowned magic schools compete, and Harry's name is unexpectedly called by the Goblet of Fire. Meanwhile, an ominous sign appears that an evil force that has been hidden for a long time may return, and a dangerous adventure for Harry and his friends unfolds.</div></td>
+		     <td><div class="cast"><strong>Cast</strong>: <i>Daniel Radcliffe, Emma Watson, Rupert Grint <br><strong>Director</strong>: <i>Mike Newell <br><strong>Duration</strong>: <i>2hrs and 37 mins</div></td>
+		     <td><div class="review"><strong>imbd-10900</strong>: <i>"It's unfortunate that so much of the book needed to be cut for time and the movie is still nearly 2 1/2 hours long. The rule of movie editing is when you must trim for time you remove the sub-plots. A lot of story and character development isn't there."</div></td>
+		     <td><div class="rating"><strong><i>4/5</strong>: The movie was well shown and the excitement was well expresed but I think the story-line could have been improved.</div></td>
+		    </dv>
+      </tr>
+
+      <tr>
+		    <td><div class="movie"><img src= "https://static.wikia.nocookie.net/international-entertainment-project/images/3/3f/Harry_Potter_and_the_Half-Blood_Prince_poster.jpg/revision/latest?cb=20221104135722"width= 150 height="200"></div></td>
+		    <div class="movie-image">
+		     <td><div class="synopsis">As Voldemort grows stronger and threatens the world, Professor Dumbledore begins a journey with Harry to find the seven Horcruxes that made Voldemort immortal. Dumbledore invites Professor Slughorn to search his memories for clues about Horcruxes. Meanwhile, Lavender, who has become Ron's girlfriend, is wary of Hermione, and a strange current begins to flow between the three.</div></td>
+		    <td><div class="cast"><strong>Cast</strong>: <i>Daniel Radcliffe, Emma Watson, Rupert Grint <br><strong>Director</strong>: <i>David Yates <br><strong>Duration</strong>: <i>2hrs and 33 mins</div></td>
+		    <td><div class="review"><strong>SnoopyStyle</strong>: <i>"Darker than ever, Lord Voldemort has been revealed in the 'Order of the Phoenix'. The forces of darkness are gathering strength. Fear has spread throughout the wizard world. Harry Potter is now investigating Voldemort's plans through his old teacher Professor Horace Slughorn (Jim Broadbent)."</div></td>
+		    <td><div class="rating"><strong><i>4.8/5</strong>: The movie showed well of Harry Potter series being in a much more "dark mood".</div></td>
+		    </div>
+      </tr> 
+    </tbody>
+</table>
+
+    <form class="d-flex">
+	        <input class="form-control me-2" type="text" placeholder="Search">
+	        <button class="btn btn-warning" type="button">Search</button>
+	      </form>
+	      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>	
+</body>
+</html>
